@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(59, 59, 59);
+}
+
+.searchBar {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.imageDisplay {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.buttonClass {
+  background-color: #a12b2b;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.inputField {
+  background-color: #a12b2b;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

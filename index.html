@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="searchBar">
+      <input id="search" class="inputField" type="text" value="" />
+      <button class="buttonClass" id="clickme">New Gif</button>
+    </div>
+    <div class="imageDisplay"><img src="" /></div>
+
+    <script>
+      let grabInput = document.getElementById('search')
+
+      document.getElementById('clickme').addEventListener('click', function () {
+        const img = document.querySelector('img')
+        fetch(
+          'https://api.giphy.com/v1/gifs/translate?api_key=WHaCOzKIdzg93iRJL1m3E049VNCQ0h7I&s=' +
+            grabInput.value,
+          { mode: 'cors' }
+        )
+          .then(function (response) {
+            return response.json()
+          })
+          .then(function (response) {
+            img.src = response.data.images.original.url
+          })
+      })
+    </script>
+  </body>
+</html>
